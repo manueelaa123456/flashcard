@@ -1,8 +1,13 @@
 body {
-    background-color: rgb(250, 209, 216);
+    background: url('img/gradiente.jpg');
     font-family: Bai Jamjuree;
 }
 
+:root {
+    --text-color: #ffffff;
+    --card-front-color: rgb(233, 173, 206);
+    --card-back-color: #ffffff;
+}
 
 #container {
     display: flex; 
@@ -10,7 +15,7 @@ body {
 
 .cartao {
     margin: 1rem 1rem;
-    background-color: rgb(253, 224, 229);
+    background-color: rgb(233, 173, 206);
     height: 20rem;
     flex-grow: 1;
     flex-basis: calc(33% - 6rem);
@@ -19,10 +24,12 @@ body {
 .cartao__conteudo {
     text-align: center;
     height: 100%;
+    background-color: var(--card-front-color);
 }
 
 .cartao__conteudo h3 {
-    background-color: rgb(255, 255, 255);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
     text-align: left;
     padding: 0.5rem;
     position: absolute;
@@ -31,9 +38,14 @@ body {
     font-size: 1vw;
 }
 
-.cartao__conteudo p {
-    margin-top: 1rem;
-    padding: 2rem;
+.cartao__conteudo__pergunta p{
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.cartao__conteudo__resposta p{
+    color: var(--card-back-color);
+    font-weight: 700;
 }
 
 footer {
