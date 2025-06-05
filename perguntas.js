@@ -1,5 +1,12 @@
 criaCartao(
     'Filmes',
+    'Em que obra clássica o filme "10 Coisas que Eu Odeio em Você" foi inspirado?',
+    'Na peça A Megera Domada, de William Shakespeare.'
+)
+
+
+criaCartao(
+    'Filmes',
     'Qual cena icônica do filme foi improvisada pela atriz Julia Stiles?',
     'A cena do poema no final do filme – ela realmente chorou de verdade, sem ter sido planejado'
 )
